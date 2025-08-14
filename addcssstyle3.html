@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Html et handicap">
+<meta name="keywords" content="HTML, CSS, option no-cache">
+<meta name="uthor" content="Laurent DEMAZY">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="keywords" content="technicien informatique, administrateur réseaux, windows, linux">
+<meta name="author" content="Laurent DEMAZY">
+<meta http-equiv="refresh" content="300">
+<meta http-equiv="Cache-Control" content="no-cache">
+<style>
+*{
+  font-size: 16px;
+  color:blue;
+}  
+
+h2{
+  font-size: 18px;
+  color:red;
+}
+
+
+.mystyle {
+  width: 100%;
+  padding: 25px;
+  margin-left : 100px;
+  background-color: coral;
+  color: white;
+  font-size: 25px;
+  box-sizing: border-box;
+}
+
+.button {
+  background-color: #04AA6D;
+  border: none;
+  color: rgb(255, 255, 255);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 95%;
+}
+</style>
+</head>
+<body>
+  <h1>Hémianopsie</h1>
+  <h2>Essai décalage d'une section</h2>
+  <section id="main">
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus neque officia ut sapiente fugit, sit tempore culpa voluptate quaerat error nam quas numquam perferendis beatae esse labore reiciendis! Labore, nobis.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque veritatis voluptatem sit ipsa. Eligendi vel dicta dolores error harum ipsum neque labore, similique maxime obcaecati nisi recusandae magnam facere. Necessitatibus!
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est, sint! Accusantium dolores inventore praesentium pariatur, adipisci aspernatur tempore facilis ratione autem dolorum mollitia, ad magni rem? Voluptates, deserunt labore. Accusantium.
+  </section>
+
+<p>Clique sur le bouton "Tester"  pour appliquer le style à la section ou pas :</p>
+
+<button class="button" onclick="myFunction()">Tester</button>
+
+<div id="myDIV">
+<p>Test de la fonction ! </p>
+</div>
+
+<script>
+function myFunction() {
+   var element = document.getElementById("main");
+   element.classList.toggle("mystyle");
+}
+</script>
+
+</body>
+</html>
